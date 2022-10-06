@@ -1,0 +1,9 @@
+html{
+    height: 1000px;
+}
+#wrapper{
+    width: 640px;
+    height: 1000px;
+    display: flex;
+    background-color: black;
+}
