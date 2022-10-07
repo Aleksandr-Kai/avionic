@@ -1,13 +1,21 @@
 function HeightBar(node) {
-    let element = document.createElement("link");
-    element.setAttribute("rel", "stylesheet");
-    element.setAttribute("type", "text/css");
-    element.setAttribute("href", "styles/heightbar.css");
-    document.getElementsByTagName("head")[0].appendChild(element);
-
     this.main = document.createElement('div')
-    this.main.classList.add('heightbar')
+    this.main.classList.add('bar')
+    this.main.style.margin = '100px 10px 0 0'
+    this.main.appendChild(createHeightPointer())
     node.appendChild(this.main)
 
     this.DoSomething = ()=>{console.log('height bar')}
+}
+
+function createHeightPointer(){
+    let p = document.createElement('div')
+    
+    p.style.border = '1px solid yellow'
+    p.style.backgroundColor = 'black'
+    p.style.width = '68px'
+    p.style.height = '30px'
+    p.style.marginTop = '120px'
+
+    return p
 }

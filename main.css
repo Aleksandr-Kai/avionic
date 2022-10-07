@@ -7,3 +7,10 @@ html{
     display: flex;
     background-color: black;
 }
+.bar {
+    width: 70px;
+    height: 300px;
+    background-color: rgb(143, 140, 140);
+    overflow: hidden;
+    padding-top: 10px;
+}
